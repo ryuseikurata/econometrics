@@ -1,0 +1,88 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\begin{document}
+
+\title{Homework1}
+\author{??}
+\maketitle
+
+\section{My Information}
+Student number: ??
+//
+faculty of commerce 4th
+ho-class
+\section{OLS method}
+
+
+\begin{equation}
+  y_i = α + βx_i + u
+\end{equation}
+
+moving u to left side,
+
+\begin{equation}
+  u = y_i - α - βx_i
+\end{equation}
+
+in OLS method, you can resolve α and β in following equation
+
+
+\begin{equation}
+  u^2 = (y_i - α - βx_i)^2
+\end{equation}
+
+you can find minimum value by using partial differential, these are answer
+\begin{equation}
+  α = y_i + βx_i
+\end{equation}
+\begin{equation}
+  β = y_i - α
+\end{equation}
+
+
+
+
+
+\section{ML method}
+
+\begin{equation}
+  y_i = α + βx_i + u
+\end{equation}
+
+because of  $u_i$ that follows a Normal distribution with mean0 and with some variance $σ$,
+
+\begin{equation}
+  f(x)=\dfrac{1}{\sqrt{2\pi\sigma}}\exp[-\dfrac{(y_i - α - βx_i)^2}{2\sigma^ 2}]
+\end{equation}
+
+\begin{equation}
+  Log(θ)= ln*\exp[-\dfrac{(y_i - α - βx_i)^2}{2\sigma^ 2}] - ln*\dfrac{1}{2π\sigma^ 2}
+\end{equation}
+
+\begin{equation}
+  Log(θ)= -\dfrac{(y_i - α - βx_i)^2}{2\sigma^ 2} - ln*\dfrac{1}{2π\sigma^ 2}
+\end{equation}
+
+\begin{equation}
+  Log(θ)= -\dfrac{1}{2\sigma^2}{((y_i - α - βx_i)^2) + \dfrac{ln}{π}}
+\end{equation}
+
+you can find maximum value by using partial differential, these are answer
+
+\begin{equation}
+  α = y_i + βx_i
+\end{equation}
+\begin{equation}
+  β = y_i - α
+\end{equation}
+
+
+
+
+\section{Summary}
+
+OlS method's answer and ML method's answer are the same
+
+so, the ML estimators are the same as OLS estimator.
+\end{document}
