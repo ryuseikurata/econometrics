@@ -1,24 +1,47 @@
 # %%
 from scipy.stats import norm
-import pandas as pd
-from statsmodels.formula.api import ols  # 回帰分析のパッケージ
-# 定数項
-b0 = 1.0
-# 説明変数の係数
-b1 = 1.0
-# 誤差項の標準偏差
-su = 1.0
+import matplotlib.pyplot as plt
+import math
+import random
+import numpy as np
+
+
+## GOD STEP
+exp = math.exp(1);
+
+# β0
+β1 = 0
+# β1
+β2 = random.uniform(math.log(exp) * 20/19, math.log(exp) * 80/79)
+
+# 標準偏差
+σ = 1
 
 # 標本の大きさ
-n = 30
+n = 4
+x = norm.rvs(0, σ, size=n)
+x12 = x[0]
 
-x = norm.rvs(4, 1, size=n)
-u = norm.rvs(0, su, size=n)
-y = b0 + b1*x + u
+y = β1 + β2*x12
 
-df_sim = pd.DataFrame({'X': x, 'Y': y})
+## HUMAN STEP
 
-formula = 'X ~ Y'
-res_sim = ols(formula, data=df_sim).fit()
-res_sim.params
-# %%
+# ロジスティック関数を定義
+β2_candidates = []
+
+for i in range(9):
+    y = random.uniform(math.log(exp) * 20/19, math.log(exp) * 80/79)
+    β2_candidates.append(y)
+
+
+y_array  = []
+for i in β2_candidates:
+    y_array.append(x12 * i)
+
+y_array
+plt.plot(β2_candidates, y_array)
+
+## make dots
+
+
+#%%

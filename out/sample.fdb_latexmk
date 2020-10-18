@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1602662687 "out/sample.dvi" "out/sample.pdf" "out/sample" 1602662688
+["dvipdf"] 1602662687 "out/sample.dvi" "out/sample.pdf" "out/sample" 1602982607
   "out/sample.dvi" 1602662687 3160 66d0b312820f8b5561e5f153c99c8d53 "latex"
   (generated)
   "out/sample.pdf"
-["latex"] 1602662687 "/Users/kuratataryusei/Development/Test/sample-python/sample.tex" "out/sample.dvi" "sample" 1602662688
+["latex"] 1602662687 "/Users/kuratataryusei/Development/Test/sample-python/sample.tex" "out/sample.dvi" "sample" 1602982607
   "/Users/kuratataryusei/Development/Test/sample-python/sample.tex" 1602662687 1646 d2654456061c75d791c2ed91b4a87c2d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -42,6 +42,6 @@
   "out/sample.aux" 1602662687 504 e1435fc312c9a2ca7a449b78a138b57c "latex"
   "sample.tex" 1602662687 1646 d2654456061c75d791c2ed91b4a87c2d ""
   (generated)
-  "out/sample.dvi"
-  "out/sample.log"
   "out/sample.aux"
+  "out/sample.log"
+  "out/sample.dvi"
