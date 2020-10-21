@@ -6,42 +6,24 @@ import random
 import numpy as np
 
 
-## GOD STEP
-exp = math.exp(1);
+x_vector = [ 3, 5, 34, -14]
+x12 = x_vector[0]
+mean = np.average(x_vector)
 
-# β0
-β1 = 0
-# β1
-β2 = random.uniform(math.log(exp) * 20/19, math.log(exp) * 80/79)
+# standard deviation
+σ = 2
 
-# 標準偏差
-σ = 1
+# x vector
+u = norm.rvs(0, σ)
 
-# 標本の大きさ
-n = 4
-x = norm.rvs(0, σ, size=n)
-x12 = x[0]
+p_min_y = norm.cdf(0.2, 0, 1);
+p_max_y = norm.cdf(0.8, 0, 1);
 
-y = β1 + β2*x12
+b_2 = 2
+# probabilty variable
+X = 0.4
+b_1 = 0.4
 
-## HUMAN STEP
-
-# ロジスティック関数を定義
-β2_candidates = []
-
-for i in range(9):
-    y = random.uniform(math.log(exp) * 20/19, math.log(exp) * 80/79)
-    β2_candidates.append(y)
-
-
-y_array  = []
-for i in β2_candidates:
-    y_array.append(x12 * i)
-
-y_array
-plt.plot(β2_candidates, y_array)
-
-## make dots
-
+## I don't know how to adgust b1 and b2.
 
 #%%

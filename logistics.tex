@@ -1,0 +1,8 @@
+$$Logit: \widehat{P_r}(y_i = 1) = \frac{exp[\widehat{λ}x_i]}{1 + exp[\widehat{λ}x_i]}$$
+
+To differentiate,
+$$Logit: \widehat{P_r}'(y_i = 1) = \frac{\partial{\widehat{P_r}(y_i = 1)}}{\partial{{x_i}_l}}$$
+
+$$ = \frac{exp[\widehat{λ}x_i]'}{\{ 1 + exp[\widehat{λ}x_i]\}'}  = \frac{exp[\widehat{λ}x_i]'\{ 1 + exp[\widehat{λ}x_i]\} - \{ 1 + exp[\widehat{λ}x_i]\}'exp[\widehat{λ}x_i]}{\{ 1 + exp[\widehat{λ}x_i]\}^2}$$
+
+$$= \frac{exp[\widehat{λ}x_i]}{\{ 1 + exp[\widehat{λ}x_i]\}^2}$$

@@ -1,0 +1,42 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\begin{document}
+
+\title{Homework2}
+\author{}
+\maketitle
+
+\section{My Information}
+Student number: 
+//
+faculty of commerce 4th
+ho-class
+\section{LogitModel}
+
+
+\begin{equation}
+ Logit: \widehat{P_r}(y_i = 1) = \frac{exp[\widehat{λ}x_i]}{1 + exp[\widehat{λ}x_i]}
+\end{equation}
+
+To differentiate,,
+
+\begin{equation}
+  Logit: \widehat{P_r}'(y_i = 1) = \frac{\partial{\widehat{P_r}(y_i = 1)}}{\partial{{x_i}_l}}
+\end{equation}
+
+\begin{equation}
+  = \frac{exp[\widehat{λ}x_i]'}{\{ 1 + exp[\widehat{λ}x_i]\}'}  = \frac{exp[\widehat{λ}x_i]'\{ 1 + exp[\widehat{λ}x_i]\} - \{ 1 + exp[\widehat{λ}x_i]\}'exp[\widehat{λ}x_i]}{\{ 1 + exp[\widehat{λ}x_i]\}^2}
+\end{equation}
+
+
+\begin{equation}
+  = \frac{exp[\widehat{λ}x_i]}{\{ 1 + exp[\widehat{λ}x_i]\}^2}
+\end{equation}
+
+\section{Summary}
+
+I don't know differentiate of fractional function, I learned it.
+
+I'm getting used to latex
+\end{document}
