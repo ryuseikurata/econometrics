@@ -1,0 +1,93 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\begin{document}
+
+\title{Homework3}
+\author{}
+\maketitle
+
+\section{My Information}
+Student number:
+//
+faculty of commerce 4th
+ho-class
+\section{Deriviation of Probability of MultinominalLogitModel}
+
+If the reduals $\epsilon$ are independently and identically distributed with the type I extreme-value distribution whose comulative distribution function (CDF) is
+\begin{equation}
+  F(\epsilon_i - \epsilon) = exp(-e^{-\epsilon})
+\end{equation}
+
+and whose probability density function (PDF) is
+
+\begin{equation}
+  f(\epsilon) = exp(-\epsilon - e^{-\epsilon_i})
+\end{equation}
+
+then we can show that
+
+\begin{equation}
+  Prob(Y_i = 1 | X) = \frac{e^V_i}{\sum_{j=1}^{m}e^V_j}
+\end{equation}
+
+The condition $Y^*=Max(Y^*_1, Y^*_2, Y^*_3..., Y^*_m)$
+implies
+
+\begin{equation}
+ \epsilon_i + V_i > \epsilon_j + V_j　\  for \ all \ j \neq i
+\end{equation}
+
+or
+
+\begin{equation}
+ \epsilon_i <  \epsilon_j + V_j - V_i  \  for \  all \  j \neq i
+\end{equation}
+
+Hence , if $\epsilon_1, \epsilon_2, ... \epsilon_m $ are identically and independently distributed , with CDF given by 1,then
+
+
+\begin{equation}
+  Prob(Y_i = 1) = Prob(\epsilon_i <  \epsilon_j + V_j - V_i ) \  for \  all \  j \neq i
+ \end{equation}
+
+ \begin{equation}
+   = \int _{-\infty}^\infty\prod_{j\neq i} F(\epsilon_i + V_i - V_j)*f(\epsilon_i)d\epsilon_i
+ \end{equation}
+
+ where $F(・)$and$f(・)$are given by (1), (2) respectively. Now
+
+ \begin{equation}
+ \prod_{j\neq i}F(\epsilon_i + V_i - V_j)f(\epsilon_i) = \prod{j \neq i}exp(-e^{-\epsilon_i} - V_i + V_j)exp(-\epsilon_i - e^{-\epsilon_i})
+\end{equation}
+
+\begin{equation}
+  = exp[\epsilon_i - e^{-\epsilon_i}(1 + \sum_{j \neq i}\frac{e^{V_j}}{e^{V_i}})]
+ \end{equation}
+
+
+ If we write (7) as
+
+ \begin{equation}
+  = \lambda_i = log(1 + \sum_{j \neq i}\frac{e^{V_j}}{e^{V_i}})
+ \end{equation}
+
+ We can write (7) as
+ \begin{equation}
+  \int _{-\infty}^\infty exp(-\epsilon^*_i-e^{-(\epsilon_i - \lambda_i)})d\epsilon_i
+ \end{equation}
+ \begin{equation}
+  = exp(-\lambda_i)\int_{-\infty}^{\infty}exp(-\epsilon^*_i-e^{-e^*_i})d\epsilon_i \  where \  -e^*_j =  \epsilon_i - \lambda
+ \end{equation}
+ \begin{equation}
+  = exp(\lambda_i)
+ \end{equation}
+ \begin{equation}
+  = \frac{e^{V_i}}{\sum_{j = 1}^m e^{V_j}}
+ \end{equation}
+\section{Summary}
+
+I don't know differentiate of fractional function, I learned it.
+
+I'm getting used to latex
+\end{document}
