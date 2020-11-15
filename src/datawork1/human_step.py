@@ -1,7 +1,7 @@
 # %%
-import god_step as god
+import src.datawork1.god_step as god
 import matplotlib.pyplot as plt
-import cdf as cdf
+import src.datawork1.cdf as cdf
 
 b2_candidates = [-20,-10, -5, -3, 2, 4, 6, 8, 9, 99 ]
 

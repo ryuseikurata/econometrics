@@ -1,4 +1,4 @@
-import god_step as god
+import src.datawork1.god_step as god
 import numpy as np
 from scipy.stats import norm
 
